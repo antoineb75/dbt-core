@@ -1,0 +1,8 @@
+docker run \
+--network=host \
+--mount type=bind,source=/Users/antoineb/Library/CloudStorage/OneDrive-Personnel/Mes\ documents/tech/sauvegardes\ code/Github/dbt-core/mount-docker/dbt-cont/jaffle-shop,target=/usr/app \
+--mount type=bind,source=/Users/antoineb/Tech/mount-docker/dbt-cont/profiles.yml,target=/root/.dbt/profiles.yml \
+5d5881f46900 \
+<instr dbt>
+
+

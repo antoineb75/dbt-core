@@ -1,0 +1,14 @@
+[0m22:06:09.310506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9125ba5c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9125bce4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9126d95950>]}
+
+
+============================== 22:06:09.321695 | dfd4ad8c-89b2-49a8-a9e3-01195b9ec7a3 ==============================
+[0m22:06:09.321695 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:06:09.326244 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:06:09.332754 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /usr/app/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:06:09.337537 [debug] [MainThread]: Command `dbt ls` failed at 22:06:09.337273 after 0.06 seconds
+[0m22:06:09.342204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f912622c550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9129225390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91290a0b10>]}
+[0m22:06:09.345996 [debug] [MainThread]: Flushing usage events
