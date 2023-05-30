@@ -1,9 +1,9 @@
-
+{{ config(materialized="view") }}
 
 with
-    customers as (select * from ANTOINE_DB.DBT_ANTOINEB75.stg_customers),
+    customers as (select * from {{ ref("stg_customers") }}),
 
-    orders as (select * from ANTOINE_DB.DBT_ANTOINEB75.stg_orders),
+    orders as (select * from {{ ref("stg_orders") }}),
 
     customer_orders as (
 
