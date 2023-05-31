@@ -14,7 +14,7 @@ with
             max(order_date) as most_recent_order_date,
             count(order_id) as number_of_orders
 
-        from orders
+        from {{ ref("stg_orders") }}
 
         group by 1
 
