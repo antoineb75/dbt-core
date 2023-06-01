@@ -5,7 +5,7 @@ with
 
     orders as (select * from {{ ref("stg_orders") }}),
 
-    customer_orders as (
+    customer_orders as (h
 
         select
             customer_id,
