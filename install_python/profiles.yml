@@ -11,9 +11,9 @@ my-snowflake-db:
       password: ABARET
 
       role: ACCOUNTADMIN
-      database: ANTOINE_DB
+      database: DBT_DEMO
       warehouse: WH_TALEND
-      schema: DBT_ANTOINEB75
+      schema: JAFFLE
       threads: 1
       client_session_keep_alive: False
       query_tag: dbt
@@ -24,3 +24,4 @@ my-snowflake-db:
       retry_on_database_errors: False # default: false
       retry_all: False  # default: false
       reuse_connections: False # default: false (available v1.4+)
+
